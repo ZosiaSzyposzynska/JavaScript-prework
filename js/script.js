@@ -46,4 +46,8 @@ if(computerMove == 'kamień' && playerMove == 'papier'){
     printMessage('Remis!');
 } else if (playerMove == 'nieznany ruch'){
     printMessage('Błąd! Wybierz ruch z zakresu od 1-3');
+<<<<<<< HEAD
 };
+=======
+} 
+>>>>>>> 2e1157d577f6d3e744756ffddffe04a82336ea3c
