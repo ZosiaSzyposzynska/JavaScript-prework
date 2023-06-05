@@ -16,12 +16,34 @@ let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.
 
 let playerMove = 'nieznany ruch';
 
-if(randomNumber == 1) {
+if(playerInput == '1') {
     playerMove = 'kamień';
-} else if(randomNumber == 2){
+} else if(playerInput == '2'){
     playerMove = 'papier';
-} else if(randomNumber == 3){
+} else if(playerInput == '3'){
     playerMove = 'nożyce';
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if(computerMove == 'kamień' && playerMove == 'papier'){
+  printMessage('Ty wygrywasz!');
+} else if(computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Ja wygrywam!');
+} else if(computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+} else if(computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Ja wygrywam!');
+} else if(computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Ja wygrywam!');
+} else if(computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+} else if(computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('Remis!');
+} else if(computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('Remis!');
+} else if(computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('Remis!');
+} else if (playerMove == 'nieznany ruch'){
+    printMessage('Błąd! Wybierz ruch z zakresu od 1-3');
+};
