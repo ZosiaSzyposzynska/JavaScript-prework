@@ -4,16 +4,40 @@
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons"></div>
-		<button id="rock-button">Kamień</button>
-		<button id="paper-button">Papier</button>
-		<button id="scissors-button">Nożyce</button>
-		<div id="messages"></div>
-	</div>
-	<script src="js/functions.js"></script>
-	<script src="js/script.js"></script>
+
+	<section class="game-introduction">
+		<div class="game-description">
+			<h1>Papier, kamień, nożyce!</h1>
+			<h2>Zapraszamy do gry</h2>
+			<h3>Instrukcja - zasady gry</h3>
+			<ol class="list-primary">
+				<li>W każdej turze gry do wyboru są trzy ruchy: kamień, papier i nożyce.</li>
+				<li>Gra online polega na tym, że computer losuje liczbę od 1 do 3 (1 - kamień, 2 - papier, 3 - nożyce).</li>
+				<li>Gracz wybiera swój ruch, naciskając na odpowiedni przycisk.</li>
+				<li>Nożyce tną papier, ale tępią się na kamieniu. </li>
+				<li>Papier owija kamień.</li>
+				<li>Jeśli gracze wybiorą ten sam ruch, mamy remis.</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="game">
+		<div class="container">
+			<div id="buttons"></div>
+			<button type ="button" id="rock-button">Kamień</button>
+			<button type ="button" id="paper-button">Papier</button>
+			<button type="button" id="scissors-button">Nożyce</button>
+			<div id="messages"></div>
+		</div>
+		<script src="js/functions.js"></script>
+		<script src="js/script.js"></script>
+	</section>
+
 </body>
 </html>
