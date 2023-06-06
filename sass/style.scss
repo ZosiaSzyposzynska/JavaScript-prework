@@ -1,0 +1,88 @@
+/* General */
+
+body {
+    justify-content: center;
+    text-align: center;
+    background-color: #F9FBE7;
+}
+
+/* Game Introduction */
+
+.list-primary {
+    list-style-position: inside;
+}
+
+
+.game-introduction h1 {
+    font-size: 60px;
+    color: #FEA1A1;
+    font-weight: bolder;
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
+    font-family: 'Domine', serif;
+    text-shadow: 0 0 0.2em #ECCDB4;
+}
+
+.game-introduction h2 {
+    font-size: 45px;
+    font-style: italic;
+    color: #ECCDB4;
+    margin-top: -30px;
+    font-family: 'Caveat', cursive;
+    text-shadow: 0 0 0.2em #ffffff;
+}
+
+.game-introduction h3 {
+    font-size: 30px;
+    color: #FEA1A1;
+    margin-top: -20px;
+    font-family: 'Domine', serif;
+    text-shadow: 0 0 0.2em #ECCDB4;
+}
+
+.game-introduction ol li {
+    font-size: 20px;
+    color: #A9907E;
+    line-height: 1.5;
+    font-family: 'Domine', serif;
+    
+}
+
+.game-introduction ol {
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
+    border-color: #FEA1A1;
+}
+
+/* Game */
+
+.game {
+    padding-top: 30px;
+}
+
+.game .container button {
+    background-color: #ECCDB4;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5%;
+    border-color: #A9907E;
+    color: #A9907E;
+    font-family: 'Domine', serif;
+}
+
+.game .container button:hover {
+    background-color: #F3DEBA;
+}
+
+.game .container #messages{
+    font-size: 22px;
+    padding-top: 20px;
+    color:#FEA1A1;
+    font-weight: bolder;
+    line-height: 1.4;
+    font-family: 'Domine', serif;
+    text-shadow: 0 0 0.2em #ECCDB4;
+}
