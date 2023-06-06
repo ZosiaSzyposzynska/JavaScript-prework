@@ -27,23 +27,23 @@ function playGame(playerInput) {
 
 function displayResult(argComputerMove, argPlayerMove) {
   if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
-    printMessage('Ty wygrywasz!');
+    printMessage('TY WYGRYWASZ!');
   } else if (argComputerMove == 'papier' && argPlayerMove == 'kamień') {
-    printMessage('Ja wygrywam!');
+    printMessage('JA WYGRYWAM!');
   } else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
-    printMessage('Ty wygrywasz!');
+    printMessage('TY WYGRYWASZ!');
   } else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
-    printMessage('Ja wygrywam!');
+    printMessage('JA WYGRYWAM!');
   } else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
-    printMessage('Ja wygrywam!');
+    printMessage('JA WYGRYWAM!');
   } else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
-    printMessage('Ty wygrywasz!');
+    printMessage('TY WYGRYWASZ!');
   } else if (argComputerMove == 'kamień' && argPlayerMove == 'kamień') {
     printMessage('Remis!');
   } else if (argComputerMove == 'papier' && argPlayerMove == 'papier') {
-    printMessage('Remis!');
+    printMessage('REMIS!');
   } else if (argComputerMove == 'nożyce' && argPlayerMove == 'nożyce') {
-    printMessage('Remis!');
+    printMessage('REMIS!');
   }
 }
 
