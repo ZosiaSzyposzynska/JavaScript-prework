@@ -1,25 +1,22 @@
-function getMoveName(argMoveId) {
+{
+const getMoveName = function (argMoveId) {
   if (argMoveId == 1) {
     return 'kamień';
   } else if (argMoveId == 2) {
     return 'papier';
   } else if (argMoveId == 3) {
     return 'nożyce';
-  } else {
-    return 'Błąd! Wybierz liczbę od 1-3';
   }
 }
 
-function playGame(playerInput) {
-  let computerMove;
-  let playerMove;
+const playGame = function(playerInput) {
 
   clearMessages();
 
-  computerMove = getMoveName(Math.floor(Math.random() * 3 + 1));
+  let computerMove = getMoveName(Math.floor(Math.random() * 3 + 1));
   printMessage('Mój ruch to: ' + computerMove);
 
-  playerMove = getMoveName(playerInput);
+  let playerMove = getMoveName(playerInput);
   printMessage('Twój ruch to: ' + playerMove);
 
   displayResult(computerMove, playerMove);
@@ -27,7 +24,7 @@ function playGame(playerInput) {
 
 
 
-function displayResult(argComputerMove, argPlayerMove) {
+const displayResult = function(argComputerMove, argPlayerMove) {
   if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
     printMessage('TY WYGRYWASZ!');
     printResult('0-1');
@@ -58,15 +55,21 @@ function displayResult(argComputerMove, argPlayerMove) {
   }
 }
 
-document.getElementById('rock-button').addEventListener('click', function () {
+const rockButton = document.getElementById('rock-button');
+const paperButton = document.getElementById('paper-button');
+const scissorsButton = document.getElementById('scissors-button');
+
+rockButton.addEventListener('click', function() {
   playGame(1);
 });
 
-document.getElementById('paper-button').addEventListener('click', function () {
+paperButton.addEventListener('click', function() {
   playGame(2);
 });
 
-document.getElementById('scissors-button').addEventListener('click', function () {
+scissorsButton.addEventListener('click', function() {
   playGame(3);
 });
 
+
+}
